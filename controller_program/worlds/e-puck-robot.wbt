@@ -1,0 +1,175 @@
+#VRML_SIM R2023a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/obstacles/protos/OilBarrel.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/rocks/protos/Rock10cm.proto"
+
+WorldInfo {
+  info [
+    "The model of the e-puck 2 robot"
+  ]
+  title "e-puck simulation"
+}
+Viewpoint {
+  orientation -0.20024713603749253 0.41996804633055324 0.8851711272799629 1.1755000191496174
+  position -0.7335046642433385 -1.8638195991595308 1.2070648596865492
+}
+TexturedBackground {
+  texture "dusk"
+  luminosity 5
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  translation 0.471498 0.342775 -0.12
+  rotation -9.589790000000001e-09 -3.9722200000000006e-09 -1 2.3562
+  floorSize 2 2
+  floorAppearance PBRAppearance {
+    baseColor 0.3 0.3 0.1
+  }
+}
+Solid {
+  translation 0.922124 0.435709 -0.0386371
+  rotation 0 1 0 4.07987e-06
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        metalness 0
+      }
+      geometry Cone {
+        bottomRadius 0.1
+        height 0.14
+      }
+    }
+  ]
+  recognitionColors [
+    1 0 0
+  ]
+}
+Solid {
+  translation 0.405868 0.142101 -0.0386371
+  rotation 0 1 0 4.07987e-06
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        metalness 0
+      }
+      geometry Cone {
+        bottomRadius 0.1
+        height 0.14
+      }
+    }
+  ]
+  name "solid(1)"
+  recognitionColors [
+    1 0 0
+  ]
+}
+OilBarrel {
+  translation 1.3777654251815319 0.23940316825477492 -0.07039241088887219
+  rotation -1.1479423768588213e-05 1.1493104787731625e-05 0.9999999998680656 0.0011853681170043
+  height 0.1
+  radius 0.1
+  physics Physics {
+    mass 1
+  }
+}
+OilBarrel {
+  translation 0.34313390733874705 0.7294128128730539 -0.07039240350263723
+  rotation -1.4172142619199727e-05 1.4185839242726636e-05 0.9999999997989562 0.0009602553574029881
+  name "oil barrel(2)"
+  height 0.1
+  radius 0.1
+  physics Physics {
+    mass 1
+  }
+}
+OilBarrel {
+  translation -0.4093317527840119 0.12508083365576111 -0.07039238510170662
+  rotation -0.001123258494774093 0.0011232785157293593 0.999998738267069 1.2121280833336625e-05
+  name "oil barrel(1)"
+  height 0.1
+  radius 0.1
+  physics Physics {
+    mass 1
+  }
+}
+Rock10cm {
+  translation 0.8557399036744866 -0.12098390775383668 -0.0801422002444088
+  rotation 0.1345398871023064 0.9907868378056555 0.01550679881757582 -2.8872930211883223
+  physics Physics {
+    mass 1
+  }
+}
+Rock10cm {
+  translation -0.0628526057216807 0.7021114356684219 -0.0696873105927783
+  rotation -0.5925978273976712 -0.13298028983210947 -0.7944457549006905 1.255017391890862
+  name "rock 10 cm(2)"
+  physics Physics {
+    mass 1
+  }
+}
+Rock10cm {
+  translation 0.8888597644017707 0.6418520996528004 -0.07392291919646503
+  rotation -0.885464711837332 -0.23684476233028487 -0.39982096324172584 1.9730558541396743
+  name "rock 10 cm(4)"
+  physics Physics {
+    mass 1
+  }
+}
+Rock10cm {
+  translation 0.45773654613931736 -0.8943006344043836 -0.0801421843566241
+  rotation -0.11917649181369441 0.9927246104498577 -0.017170078804669642 -2.8877186365455625
+  name "rock 10 cm(3)"
+  physics Physics {
+    mass 1
+  }
+}
+Rock10cm {
+  translation 0.17145256048503507 -0.10579705831617811 -0.07942340522402387
+  rotation 0.02243535204077717 0.9866260337884645 0.1614488291368197 -2.8748968177803143
+  name "rock 10 cm(1)"
+  physics Physics {
+    mass 1
+  }
+}
+Rock10cm {
+  translation -0.40274329776642703 0.5530488204439077 -0.0794234063719206
+  rotation 0.01870519095522932 0.9867847182749592 0.160953520030902 -2.873677450256769
+  name "rock 10 cm(5)"
+  physics Physics {
+    mass 1
+  }
+}
+E-puck {
+  hidden position_0_0 8814.095840775606
+  hidden position_0_1 11080.298741042652
+  hidden linearVelocity_0 -0.055637809952816336 0.022360057960832166 1.6281399276846767e-08
+  hidden angularVelocity_0 0.0009246781730305519 0.0023008535179540046 -1.5271956212427702e-07
+  hidden rotation_1 0 -0.9999999999999999 0 3.7355149796948917
+  hidden linearVelocity_1 -0.055626093890500425 0.022355956115353775 2.617479564057073e-11
+  hidden angularVelocity_1 -1.11777190480724 -2.7813151320481486 1.0059785391825581e-07
+  hidden rotation_2 0 -1 0 3.8515387812875037
+  hidden linearVelocity_2 -0.055626514037426786 0.022354911613731543 -6.85174583961925e-11
+  hidden angularVelocity_2 -1.1177714947115922 -2.781315296874771 -7.742983893683699e-08
+  translation 0.6421540560041085 1.4209257418332037 -0.12006396807592057
+  rotation 0.0005304414509635487 -0.00010258920466361917 0.9999998540536505 2.759461534199832
+  controller "Robot_controller"
+  groundSensorsSlot [
+    Camera {
+      name "camera1"
+      recognitionColors [
+        1 0 0
+      ]
+      recognition Recognition {
+        frameColor 1 0.1 0
+        frameThickness 3
+      }
+    }
+  ]
+}
